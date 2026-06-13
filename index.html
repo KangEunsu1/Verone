@@ -1,163 +1,33 @@
 <!DOCTYPE html>
-
 <html lang="ko">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>VERONE (베론) - 레트로 스포츠웨어</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-
-<link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script>
-<style>
-        :root {
-            --cream: #F2EFE9;
-            --deep-green: #1A3626;
-            --dark-brown: #3C2A21;
-            --gold: #D2AE37;
-            --heavy-black: #111111;
-        }
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERONE (베론) - 레트로 스포츠웨어</title>
+    
+    <!-- Inter 및 Inika 폰트 로드 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:ital,wght@0,300;0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+    
+    <!-- 얇고 세련된 아이콘을 위한 Phosphor Icons 로드 -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
         body {
             font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 160%;
-            letter-spacing: 0;
-            color: var(--heavy-black);
-            font-style: normal;
+            color: #111111;
         }
-
-        body *,
-        button,
-        input {
-            font-style: normal !important;
+        .font-inika {
+            font-family: 'Inika', serif;
         }
-
-        .typo-brand {
-            font-family: 'Inika', serif !important;
-            font-weight: 600 !important;
-            font-size: 128px !important;
-            line-height: 100% !important;
-            letter-spacing: 0.06em !important;
-        }
-        .typo-hero-01 {
-            font-family: 'Inika', serif !important;
-            font-weight: 600 !important;
-            font-size: 80px !important;
-            line-height: 110% !important;
-            letter-spacing: -0.02em !important;
-        }
-        .typo-page-01 {
-            font-family: 'Inika', serif !important;
-            font-weight: 600 !important;
-            font-size: 64px !important;
-            line-height: 110% !important;
-            letter-spacing: 0 !important;
-        }
-        .typo-sec-01 {
-            font-family: 'Inika', serif !important;
-            font-weight: 600 !important;
-            font-size: 48px !important;
-            line-height: 120% !important;
-            letter-spacing: 0 !important;
-        }
-        .typo-sec-02 {
-            font-family: 'Inika', serif !important;
-            font-weight: 600 !important;
-            font-size: 40px !important;
-            line-height: 120% !important;
-            letter-spacing: 0 !important;
-        }
-        .typo-sec-03 {
-            font-family: 'Inika', serif !important;
-            font-weight: 600 !important;
-            font-size: 24px !important;
-            line-height: 120% !important;
-            letter-spacing: 0.02em !important;
-        }
-        .typo-sec-04 {
-            font-family: 'Inika', serif !important;
-            font-weight: 300 !important;
-            font-size: 24px !important;
-            line-height: 120% !important;
-            letter-spacing: 0.02em !important;
-        }
-        .typo-body-01 {
-            font-family: 'Inter', sans-serif !important;
-            font-weight: 400 !important;
-            font-size: 16px !important;
-            line-height: 160% !important;
-            letter-spacing: 0 !important;
-        }
-        .typo-body-02 {
-            font-family: 'Inter', sans-serif !important;
-            font-weight: 400 !important;
-            font-size: 14px !important;
-            line-height: 160% !important;
-            letter-spacing: 0 !important;
-        }
-        .typo-item-01 {
-            font-family: 'Inter', sans-serif !important;
-            font-weight: 600 !important;
-            font-size: 12px !important;
-            line-height: 140% !important;
-            letter-spacing: 0.02em !important;
-        }
-        .typo-item-02 {
-            font-family: 'Inter', sans-serif !important;
-            font-weight: 600 !important;
-            font-size: 16px !important;
-            line-height: 140% !important;
-            letter-spacing: 0 !important;
-        }
-        .typo-sale-01 {
-            font-family: 'Inter', sans-serif !important;
-            font-weight: 600 !important;
-            font-size: 18px !important;
-            line-height: 140% !important;
-            letter-spacing: 0 !important;
-        }
-        .typo-menu-01 {
-            font-family: 'Inter', sans-serif !important;
-            font-weight: 600 !important;
-            font-size: 14px !important;
-            line-height: 140% !important;
-            letter-spacing: 0.02em !important;
-        }
-        .typo-menu-02 {
-            font-family: 'Inter', sans-serif !important;
-            font-weight: 600 !important;
-            font-size: 12px !important;
-            line-height: 140% !important;
-            letter-spacing: 0.02em !important;
-        }
-        .typo-label-01 {
-            font-family: 'Inter', sans-serif !important;
-            font-weight: 700 !important;
-            font-size: 12px !important;
-            line-height: 140% !important;
-            letter-spacing: 0.08em !important;
-        }
-
-        .wireframe-box {
-            border: 2px dashed #9ca3af;
-            background-color: #f3f4f6;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #6b7280;
-            font-weight: 600;
-            text-align: center;
-        }
-
         .polaroid {
             background: #fff;
             padding: 12px 12px 40px 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08);
             border: 1px solid #e5e7eb;
         }
-
         body::after {
             content: '';
             position: fixed;
@@ -172,558 +42,572 @@
             z-index: 9999;
             mix-blend-mode: multiply;
         }
-</style>
+    </style>
 </head>
 <body class="bg-[#F2EFE9]">
-<div class="bg-[#3C2A21] text-[#F2EFE9] text-center py-2 typo-label-01">
+
+    <!-- 1. 유틸리티 바 -->
+    <div class="bg-[#3C2A21] text-[#F2EFE9] text-[12px] font-semibold leading-[1.33] tracking-normal text-center py-2">
         [공지] 아카이브 컬렉션 재입고 안내 | V-CLUB 가입 시 전용 룩북 제공 및 15% 웰컴 쿠폰
     </div>
-<header class="border-b border-gray-300 sticky top-0 bg-[#F2EFE9] z-50">
-<div class="flex justify-end space-x-5 px-8 py-2 text-gray-600 bg-white/50 border-b border-gray-200">
-<a class="hover:text-[#111111] typo-menu-02" href="#help">도움말/CS</a>
-<a class="hover:text-[#111111] typo-menu-02" href="#">주문조회</a>
-<a class="hover:text-[#111111] text-[#1A3626] typo-menu-02" href="#">반품/교환</a>
-<a class="hover:text-[#111111] typo-menu-02" href="#">로그인 / 회원가입</a>
-</div>
-<nav class="flex items-center justify-between px-8 py-5 max-w-[1600px] mx-auto">
-<div class="w-32 h-10 flex items-center justify-center text-[#111111] bg-white border-2 border-[#111111] shrink-0 typo-menu-01">
+
+    <!-- 2. 헤더 네비게이션 -->
+    <header class="border-b border-gray-300 sticky top-0 bg-[#F2EFE9] z-50">
+        <div class="flex justify-end space-x-5 px-8 py-2 text-[12px] font-semibold leading-[1.33] tracking-normal text-gray-600 bg-white/50 border-b border-gray-200">
+            <a href="#help" class="hover:text-[#111111]">도움말/CS</a>
+            <a href="#" class="hover:text-[#111111]">주문조회</a>
+            <a href="#" class="hover:text-[#111111] font-semibold text-[#1A3626]">반품/교환</a>
+            <a href="#" class="hover:text-[#111111] font-semibold">로그인 / 회원가입</a>
+        </div>
+        
+        <nav class="flex items-center justify-between px-8 py-5 max-w-[1600px] mx-auto">
+            <div class="w-32 h-10 flex items-center justify-center text-[16px] font-semibold leading-[1.2] tracking-[0.01em] text-[#111111] bg-white border-2 border-[#111111] shrink-0 font-inika">
                 VERONE
             </div>
-<div class="flex items-center space-x-10">
-<ul class="flex space-x-8 uppercase items-center text-[#111111]">
-<li class="relative group cursor-pointer typo-menu-01">
-<div class="border-b-2 border-transparent group-hover:border-[#111111] pb-1 inline-block typo-menu-01">UNIFORM</div>
-<div class="absolute left-1/2 -translate-x-1/2 top-full pt-1 w-32 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-<div class="bg-white border-2 border-[#111111] shadow-[4px_4px_0px_0px_rgba(17,17,17,1)] flex flex-col uppercase text-center">
-<a class="block px-4 py-3 hover:bg-[#F2EFE9] hover:text-[#111111] text-gray-800 border-b border-gray-200 typo-menu-02" href="#">HOME</a>
-<a class="block px-4 py-3 hover:bg-[#F2EFE9] hover:text-[#111111] text-gray-800 border-b border-gray-200 typo-menu-02" href="#">AWAY</a>
-<a class="block px-4 py-3 hover:bg-[#F2EFE9] hover:text-[#111111] text-gray-800 typo-menu-02" href="#">THIRD</a>
-</div>
-</div>
-</li>
-<li class="border-b-2 border-transparent hover:border-[#111111] pb-1 cursor-pointer text-center typo-menu-01">
-                        WIND<br/>BREAKER
+
+            <div class="flex items-center space-x-10 hidden md:flex">
+                <ul class="flex space-x-8 text-[16px] font-semibold leading-[1.2] tracking-[0.01em] uppercase items-center text-[#111111]">
+                    <li class="relative group cursor-pointer">
+                        <div class="border-b-2 border-transparent group-hover:border-[#111111] pb-1 inline-block">UNIFORM</div>
+                        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-1 w-32 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="bg-white border-2 border-[#111111] shadow-[4px_4px_0px_0px_rgba(17,17,17,1)] flex flex-col text-[14px] font-semibold leading-[1.2] tracking-[0.01em] uppercase text-center">
+                                <a href="#" class="block px-4 py-3 hover:bg-[#F2EFE9] hover:text-[#111111] text-gray-800 border-b border-gray-200">HOME</a>
+                                <a href="#" class="block px-4 py-3 hover:bg-[#F2EFE9] hover:text-[#111111] text-gray-800 border-b border-gray-200">AWAY</a>
+                                <a href="#" class="block px-4 py-3 hover:bg-[#F2EFE9] hover:text-[#111111] text-gray-800">THIRD</a>
+                            </div>
+                        </div>
                     </li>
-<li class="border-b-2 border-transparent hover:border-[#111111] pb-1 cursor-pointer typo-menu-01">HOODIE</li>
-<li class="border-b-2 border-transparent hover:border-[#111111] pb-1 cursor-pointer typo-menu-01">BOTTOM</li>
-<li class="text-[#1A3626] border-b-2 border-transparent hover:border-[#1A3626] pb-1 cursor-pointer typo-menu-01">ARCHIVE SALE</li>
-</ul>
-<div class="flex items-center space-x-6">
-<div class="flex items-center bg-white rounded-full px-4 py-2 w-48 lg:w-64 border border-gray-300 focus-within:border-[#1A3626] transition-all">
-<input class="bg-transparent outline-none w-full text-gray-800 placeholder-gray-500 typo-menu-02" placeholder="클래식 아이템 검색" type="text"/>
-<button class="text-gray-500 hover:text-[#1A3626] whitespace-nowrap ml-2 typo-menu-02">검색</button>
-</div>
-<div class="flex space-x-4">
-<div class="w-6 h-6 flex items-center justify-center border border-gray-300 rounded-sm cursor-pointer hover:border-[#1A3626] hover:text-[#1A3626] transition-colors bg-white typo-menu-02" title="마이페이지">[👤]</div>
-<div class="w-6 h-6 flex items-center justify-center border border-gray-300 rounded-sm cursor-pointer hover:border-[#1A3626] hover:text-[#1A3626] transition-colors bg-white typo-menu-02" title="위시리스트">[🖤]</div>
-<div class="w-6 h-6 flex items-center justify-center border border-gray-300 rounded-sm cursor-pointer hover:border-[#1A3626] hover:text-[#1A3626] transition-colors bg-white typo-menu-02" title="장바구니">[🛒]</div>
-</div>
-</div>
-</div>
-</nav>
-</header>
-<main>
-<section class="w-full h-[600px] flex items-center justify-center flex-col mt-4 border-l-0 border-r-0 text-center relative overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img alt="VERONE 브랜드 스토리" class="w-full h-full object-cover object-center" src="./images/BrandInfo.png"/>
-</div>
-<div class="absolute inset-0 bg-black/40 z-0 pointer-events-none"></div>
-<div class="z-10 flex flex-col items-center">
-<h1 class="md:text-[128px] text-[#F2EFE9] drop-shadow-md mt-4 mb-2 typo-brand">VERONE</h1>
-<p class="md:text-[24px] text-[#D2AE37] uppercase drop-shadow-sm mb-10 typo-sec-04">클래식을 입고 새롭게 움직이다.</p>
-<button class="bg-[#D2AE37] text-[#1A3626] py-4 px-12 hover:bg-[#F2EFE9] border-2 border-transparent transition-colors shadow-[6px_6px_0px_0px_rgba(0,0,0,0.4)] typo-menu-02">[레트로 컬렉션 스토어 이동]</button>
-</div>
-</section>
-<section class="max-w-7xl mx-auto px-8 py-16">
-<div class="flex justify-between items-end mb-6">
-<div>
-<h2 class="uppercase text-[#111111] typo-sec-02">Editor's Pick</h2>
-<p class="text-gray-600 mt-2 typo-body-02">시대를 초월하는 마스터피스, 베론의 이번 시즌 에센셜 라인업</p>
-</div>
-<div class="flex space-x-2">
-<button class="w-8 h-8 flex items-center justify-center border border-gray-300 bg-white hover:bg-[#111111] hover:text-white transition-colors cursor-pointer typo-menu-02">[◀]</button>
-<button class="w-8 h-8 flex items-center justify-center border border-gray-300 bg-white hover:bg-[#111111] hover:text-white transition-colors cursor-pointer typo-menu-02">[▶]</button>
-</div>
-</div>
-<div class="grid grid-cols-4 gap-6">
-<div class="group cursor-pointer">
-<div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 flex items-center justify-center mb-3">
-<img alt="베론 딥그린 홈 유니폼" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500" src="./images/Home.png"/>
-<div class="absolute top-3 left-3 bg-[#1A3626] text-[#F2EFE9] px-2 py-1 z-10 typo-label-01">HOT</div>
-<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 typo-body-02">
-<div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center hover:bg-[#F2EFE9] typo-body-02" title="위시리스트">[🖤]</div>
-</div>
-</div>
-<div class="text-gray-500 mb-1 typo-item-01">UNIFORM (HOME)</div>
-<div class="mb-1 group-hover:text-[#1A3626] transition-colors typo-item-02">베론 딥그린 홈 유니폼</div>
-<div class="text-[#111111] typo-sale-01">89,000 원</div>
-<div class="text-[#D2AE37] mt-1 typo-label-01">★★★★★ (1,245)</div>
-<button class="text-gray-500 underline mt-2 hover:text-[#1A3626] inline-block typo-menu-02">체형별 실측 사이즈 가이드 →</button>
-<div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="flex-1 bg-white border border-[#111111] text-[#111111] py-2.5 hover:bg-[#F2EFE9] typo-menu-02">[장바구니]</button>
-<button class="flex-1 bg-[#111111] text-white py-2.5 hover:bg-[#1A3626] border-2 border-[#111111] hover:border-[#1A3626] typo-menu-02">[바로구매]</button>
-</div>
-</div>
-<div class="group cursor-pointer">
-<div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 flex items-center justify-center mb-3">
-<img alt="헤리티지 윈드브레이커 딥그린" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500" src="./images/WindGreen.png"/>
-<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 typo-body-02">
-<div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center hover:bg-[#F2EFE9] typo-body-02" title="위시리스트">[🖤]</div>
-</div>
-</div>
-<div class="text-gray-500 mb-1 typo-item-01">WINDBREAKER</div>
-<div class="mb-1 group-hover:text-[#1A3626] transition-colors typo-item-02">헤리티지 윈드브레이커 딥그린</div>
-<div class="text-[#111111] typo-sale-01">129,000 원</div>
-<div class="text-[#D2AE37] mt-1 typo-label-01">★★★★☆ (892)</div>
-<button class="text-gray-500 underline mt-2 hover:text-[#1A3626] inline-block typo-menu-02">체형별 실측 사이즈 가이드 →</button>
-<div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="flex-1 bg-white border border-[#111111] text-[#111111] py-2.5 hover:bg-[#F2EFE9] typo-menu-02">[장바구니]</button>
-<button class="flex-1 bg-[#111111] text-white py-2.5 hover:bg-[#1A3626] border-2 border-[#111111] hover:border-[#1A3626] typo-menu-02">[바로구매]</button>
-</div>
-</div>
-<div class="group cursor-pointer">
-<div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 flex items-center justify-center mb-3">
-<img alt="에센셜 아치 로고 후디 다크브라운" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500" src="./images/BrownHoodie.png"/>
-<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 typo-body-02">
-<div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center hover:bg-[#F2EFE9] typo-body-02" title="위시리스트">[🖤]</div>
-</div>
-</div>
-<div class="text-gray-500 mb-1 typo-item-01">HOODIE</div>
-<div class="mb-1 group-hover:text-[#1A3626] transition-colors typo-item-02">에센셜 아치 로고 후디 다크브라운</div>
-<div class="text-[#111111] typo-sale-01">79,000 원</div>
-<div class="text-[#D2AE37] mt-1 typo-label-01">★★★★★ (3,412)</div>
-<button class="text-gray-500 underline mt-2 hover:text-[#1A3626] inline-block typo-menu-02">체형별 실측 사이즈 가이드 →</button>
-<div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="flex-1 bg-white border border-[#111111] text-[#111111] py-2.5 hover:bg-[#F2EFE9] typo-menu-02">[장바구니]</button>
-<button class="flex-1 bg-[#111111] text-white py-2.5 hover:bg-[#1A3626] border-2 border-[#111111] hover:border-[#1A3626] typo-menu-02">[바로구매]</button>
-</div>
-</div>
-<div class="group cursor-pointer">
-<div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 flex items-center justify-center mb-3">
-<img alt="아이코닉 바시티 재킷 딥그린" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500" src="./images/Jumper.png"/>
-<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 typo-body-02">
-<div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center hover:bg-[#F2EFE9] typo-body-02" title="위시리스트">[🖤]</div>
-</div>
-</div>
-<div class="text-gray-500 mb-1 typo-item-01">VARSITY JACKET</div>
-<div class="mb-1 group-hover:text-[#1A3626] transition-colors typo-item-02">아이코닉 바시티 재킷 딥그린</div>
-<div class="text-[#111111] typo-sale-01">159,000 원</div>
-<div class="text-[#D2AE37] mt-1 typo-label-01">★★★★☆ (512)</div>
-<button class="text-gray-500 underline mt-2 hover:text-[#1A3626] inline-block typo-menu-02">체형별 실측 사이즈 가이드 →</button>
-<div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="flex-1 bg-white border border-[#111111] text-[#111111] py-2.5 hover:bg-[#F2EFE9] typo-menu-02">[장바구니]</button>
-<button class="flex-1 bg-[#111111] text-white py-2.5 hover:bg-[#1A3626] border-2 border-[#111111] hover:border-[#1A3626] typo-menu-02">[바로구매]</button>
-</div>
-</div>
-</div>
-</section>
-<section class="max-w-7xl mx-auto px-8 py-12 border-t border-gray-300">
-<div class="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
-<div>
-<h2 class="uppercase text-[#111111] typo-sec-02">Best Sellers</h2>
-<div class="flex flex-wrap gap-x-5 gap-y-2 mt-4 text-gray-400 uppercase">
-<span class="text-[#111111] border-b-2 border-[#111111] pb-1 cursor-pointer typo-body-02">ALL</span>
-<span class="cursor-pointer hover:text-[#111111] typo-body-02">CLASSIC ARCHIVE</span>
-<span class="cursor-pointer hover:text-[#111111] typo-body-02">FOOTBALL CLUB</span>
-<span class="cursor-pointer hover:text-[#111111] typo-body-02">TRACK &amp; FIELD</span>
-<span class="cursor-pointer hover:text-[#111111] typo-body-02">STREET DAILY</span>
-</div>
-</div>
-</div>
-<div class="grid grid-cols-4 gap-x-6 gap-y-12">
-<div class="group cursor-pointer flex flex-col relative">
-<div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 mb-3 flex items-center justify-center">
-<img alt="베론 어웨이 크림 유니폼" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500" src="./images/Away.png"/>
-<div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] w-10 h-10 flex items-center justify-center z-10 typo-label-01">1</div>
-<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 typo-body-02">
-<div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center hover:bg-[#F2EFE9] typo-body-02" title="위시리스트">[🖤]</div>
-</div>
-</div>
-<div class="text-gray-500 mb-1 typo-item-01">UNIFORM (AWAY)</div>
-<div class="mb-1 group-hover:text-[#1A3626] transition-colors line-clamp-1 typo-item-02">베론 어웨이 크림 유니폼</div>
-<div class="text-[#111111] typo-sale-01">89,000 원</div>
-<button class="text-left text-gray-500 underline mt-1 hover:text-[#1A3626] typo-menu-02">실측 사이즈 가이드 →</button>
-<div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="flex-1 bg-white border border-[#111111] text-[#111111] py-2.5 hover:bg-[#F2EFE9] typo-menu-02">[장바구니]</button>
-<button class="flex-1 bg-[#111111] text-white py-2.5 hover:bg-[#1A3626] border-2 border-[#111111] hover:border-[#1A3626] typo-menu-02">[바로구매]</button>
-</div>
-</div>
-<div class="group cursor-pointer flex flex-col relative">
-<div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 mb-3 flex items-center justify-center">
-<img alt="베론 써드 유니폼 다크브라운" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500" src="./images/Third.png"/>
-<div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] w-10 h-10 flex items-center justify-center z-10 typo-label-01">2</div>
-<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 typo-body-02">
-<div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center hover:bg-[#F2EFE9] typo-body-02" title="위시리스트">[🖤]</div>
-</div>
-</div>
-<div class="text-gray-500 mb-1 typo-item-01">UNIFORM (THIRD)</div>
-<div class="mb-1 group-hover:text-[#1A3626] transition-colors line-clamp-1 typo-item-02">베론 써드 유니폼 다크브라운</div>
-<div class="text-[#111111] typo-sale-01">99,000 원</div>
-<button class="text-left text-gray-500 underline mt-1 hover:text-[#1A3626] typo-menu-02">실측 사이즈 가이드 →</button>
-<div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="flex-1 bg-white border border-[#111111] text-[#111111] py-2.5 hover:bg-[#F2EFE9] typo-menu-02">[장바구니]</button>
-<button class="flex-1 bg-[#111111] text-white py-2.5 hover:bg-[#1A3626] border-2 border-[#111111] hover:border-[#1A3626] typo-menu-02">[바로구매]</button>
-</div>
-</div>
-<div class="group cursor-pointer flex flex-col relative">
-<div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 flex items-center justify-center mb-3">
-<img alt="에센셜 코튼 팬츠 화이트" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500" src="./images/WhitePants.png"/>
-<div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] w-10 h-10 flex items-center justify-center z-10 typo-label-01">3</div>
-<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 typo-body-02">
-<div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center hover:bg-[#F2EFE9] typo-body-02" title="위시리스트">[🖤]</div>
-</div>
-</div>
-<div class="text-gray-500 mb-1 typo-item-01">BOTTOM</div>
-<div class="mb-1 group-hover:text-[#1A3626] transition-colors line-clamp-1 typo-item-02">에센셜 코튼 팬츠 화이트</div>
-<div class="text-[#111111] typo-sale-01">69,000 원</div>
-<button class="text-left text-gray-500 underline mt-1 hover:text-[#1A3626] typo-menu-02">실측 사이즈 가이드 →</button>
-<div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="flex-1 bg-white border border-[#111111] text-[#111111] py-2.5 hover:bg-[#F2EFE9] typo-menu-02">[장바구니]</button>
-<button class="flex-1 bg-[#111111] text-white py-2.5 hover:bg-[#1A3626] border-2 border-[#111111] hover:border-[#1A3626] typo-menu-02">[바로구매]</button>
-</div>
-</div>
-<div class="group cursor-pointer flex flex-col relative">
-<div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 flex items-center justify-center mb-3">
-<img alt="에센셜 코튼 팬츠 블랙" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500" src="./images/BlackPants.png"/>
-<div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] w-10 h-10 flex items-center justify-center z-10 typo-label-01">4</div>
-<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 typo-body-02">
-<div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center hover:bg-[#F2EFE9] typo-body-02" title="위시리스트">[🖤]</div>
-</div>
-</div>
-<div class="text-gray-500 mb-1 typo-item-01">BOTTOM</div>
-<div class="mb-1 group-hover:text-[#1A3626] transition-colors line-clamp-1 typo-item-02">에센셜 코튼 팬츠 블랙</div>
-<div class="text-[#111111] typo-sale-01">69,000 원</div>
-<button class="text-left text-gray-500 underline mt-1 hover:text-[#1A3626] typo-menu-02">실측 사이즈 가이드 →</button>
-<div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="flex-1 bg-white border border-[#111111] text-[#111111] py-2.5 hover:bg-[#F2EFE9] typo-menu-02">[장바구니]</button>
-<button class="flex-1 bg-[#111111] text-white py-2.5 hover:bg-[#1A3626] border-2 border-[#111111] hover:border-[#1A3626] typo-menu-02">[바로구매]</button>
-</div>
-</div>
-<div class="group cursor-pointer flex flex-col relative">
-<div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 mb-3 flex items-center justify-center">
-<img alt="솔리드 블랙 윈드브레이커" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500" src="./images/WindBlack.png"/>
-<div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] w-10 h-10 flex items-center justify-center z-10 typo-label-01">5</div>
-<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 typo-body-02">
-<div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center hover:bg-[#F2EFE9] typo-body-02" title="위시리스트">[🖤]</div>
-</div>
-</div>
-<div class="text-gray-500 mb-1 typo-item-01">WINDBREAKER</div>
-<div class="mb-1 group-hover:text-[#1A3626] transition-colors line-clamp-1 typo-item-02">솔리드 블랙 윈드브레이커</div>
-<div class="text-[#111111] typo-sale-01">129,000 원</div>
-<button class="text-left text-gray-500 underline mt-1 hover:text-[#1A3626] typo-menu-02">실측 사이즈 가이드 →</button>
-<div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="flex-1 bg-white border border-[#111111] text-[#111111] py-2.5 hover:bg-[#F2EFE9] typo-menu-02">[장바구니]</button>
-<button class="flex-1 bg-[#111111] text-white py-2.5 hover:bg-[#1A3626] border-2 border-[#111111] hover:border-[#1A3626] typo-menu-02">[바로구매]</button>
-</div>
-</div>
-<div class="group cursor-pointer flex flex-col relative">
-<div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 mb-3 flex items-center justify-center">
-<img alt="오리지널 다크브라운 윈드브레이커" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500" src="./images/WindBrown.png"/>
-<div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] w-10 h-10 flex items-center justify-center z-10 typo-label-01">6</div>
-<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 typo-body-02">
-<div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center hover:bg-[#F2EFE9] typo-body-02" title="위시리스트">[🖤]</div>
-</div>
-</div>
-<div class="text-gray-500 mb-1 typo-item-01">WINDBREAKER</div>
-<div class="mb-1 group-hover:text-[#1A3626] transition-colors line-clamp-1 typo-item-02">오리지널 다크브라운 윈드브레이커</div>
-<div class="text-[#111111] typo-sale-01">129,000 원</div>
-<button class="text-left text-gray-500 underline mt-1 hover:text-[#1A3626] typo-menu-02">실측 사이즈 가이드 →</button>
-<div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="flex-1 bg-white border border-[#111111] text-[#111111] py-2.5 hover:bg-[#F2EFE9] typo-menu-02">[장바구니]</button>
-<button class="flex-1 bg-[#111111] text-white py-2.5 hover:bg-[#1A3626] border-2 border-[#111111] hover:border-[#1A3626] typo-menu-02">[바로구매]</button>
-</div>
-</div>
-<div class="group cursor-pointer flex flex-col relative">
-<div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 flex items-center justify-center mb-3">
-<img alt="아이코닉 바시티 재킷 딥그린" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500" src="./images/Jumper.png"/>
-<div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] w-10 h-10 flex items-center justify-center z-10 typo-label-01">7</div>
-<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 typo-body-02">
-<div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center hover:bg-[#F2EFE9] typo-body-02" title="위시리스트">[🖤]</div>
-</div>
-</div>
-<div class="text-gray-500 mb-1 typo-item-01">VARSITY JACKET</div>
-<div class="mb-1 group-hover:text-[#1A3626] transition-colors line-clamp-1 typo-item-02">아이코닉 바시티 재킷 딥그린</div>
-<div class="text-[#111111] typo-sale-01">159,000 원</div>
-<button class="text-left text-gray-500 underline mt-1 hover:text-[#1A3626] typo-menu-02">실측 사이즈 가이드 →</button>
-<div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="flex-1 bg-white border border-[#111111] text-[#111111] py-2.5 hover:bg-[#F2EFE9] typo-menu-02">[장바구니]</button>
-<button class="flex-1 bg-[#111111] text-white py-2.5 hover:bg-[#1A3626] border-2 border-[#111111] hover:border-[#1A3626] typo-menu-02">[바로구매]</button>
-</div>
-</div>
-<div class="group cursor-pointer flex flex-col relative">
-<div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 flex items-center justify-center mb-3">
-<img alt="에센셜 아치 로고 후디 딥그린" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500" src="./images/GreenHoodie.png"/>
-<div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] w-10 h-10 flex items-center justify-center z-10 typo-label-01">8</div>
-<div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 typo-body-02">
-<div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center hover:bg-[#F2EFE9] typo-body-02" title="위시리스트">[🖤]</div>
-</div>
-</div>
-<div class="text-gray-500 mb-1 typo-item-01">HOODIE</div>
-<div class="mb-1 group-hover:text-[#1A3626] transition-colors line-clamp-1 typo-item-02">에센셜 아치 로고 후디 딥그린</div>
-<div class="text-[#111111] typo-sale-01">79,000 원</div>
-<button class="text-left text-gray-500 underline mt-1 hover:text-[#1A3626] typo-menu-02">실측 사이즈 가이드 →</button>
-<div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<button class="flex-1 bg-white border border-[#111111] text-[#111111] py-2.5 hover:bg-[#F2EFE9] typo-menu-02">[장바구니]</button>
-<button class="flex-1 bg-[#111111] text-white py-2.5 hover:bg-[#1A3626] border-2 border-[#111111] hover:border-[#1A3626] typo-menu-02">[바로구매]</button>
-</div>
-</div>
-</div>
-</section>
-<section class="relative text-white py-20 mt-8 border-t-[12px] border-[#3C2A21] bg-[#111111] overflow-hidden">
-<div class="absolute inset-0 z-0 pointer-events-none opacity-40" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%224%22 height=%224%22%3E%3Cpath d=%22M1 3h1v1H1V3zm2-2h1v1H3V1z%22 fill=%22%23ffffff%22 fill-opacity=%220.08%22/%3E%3C/svg%3E');"></div>
-<div class="absolute inset-0 z-0 pointer-events-none opacity-30 mix-blend-overlay" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.85%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22/%3E%3C/svg%3E');"></div>
-<div class="relative z-10 max-w-7xl mx-auto px-8 text-center mb-10">
-<span class="text-[#D2AE37] mb-2 block uppercase typo-label-01">THE DIGITAL MUSEUM</span>
-<h2 class="md:text-[48px] mb-4 uppercase typo-sec-01">Archive Collection</h2>
-<p class="text-gray-400 max-w-2xl mx-auto typo-body-02">베론의 영광스러운 과거 디자인 유산을 디지털 뮤지엄으로 선보입니다. 수집가들의 심장을 뛰게 할 단종 모델들의 완벽한 복각을 경험하세요.</p>
-</div>
-<div class="relative z-10 max-w-7xl mx-auto px-8">
-<div class="w-full bg-[#1A1A1A]/90 backdrop-blur-sm text-white border border-gray-700 flex flex-col md:flex-row items-center p-8 md:p-12 group hover:border-gray-500 transition-colors shadow-2xl">
-<div class="md:w-1/2 pr-0 md:pr-8 mb-6 md:mb-0">
-<span class="text-[#D2AE37] mb-2 block uppercase typo-label-01">LIMITED EDITION SALE</span>
-<h3 class="md:text-[38px] mb-4 uppercase typo-sec-02">ORIGINAL<br/>WINDBREAKER SERIES</h3>
-<p class="text-gray-400 mb-8 typo-body-02">
-                            당시 선수들이 웜업 시 착용했던 아이코닉한 절개 라인과 바스락거리는 나일론 질감을 100% 재현했습니다. 한정 수량으로 발매되는 아카이브 세일을 놓치지 마세요.
-                        </p>
-<button class="bg-[#F2EFE9] text-[#1A3626] py-3 px-8 hover:bg-white transition-colors typo-menu-02">[아카이브 세일 입장하기]</button>
-</div>
-<div class="md:w-1/2 w-full h-72 relative overflow-hidden bg-[#F2EFE9] border-none group-hover:scale-[1.02] transition-transform shadow-[10px_10px_0px_0px_rgba(26,54,38,0.5)] flex items-center justify-center">
-<img alt="아카이브 바람막이 오리지널" class="w-full h-full object-cover mix-blend-darken scale-110" src="./images/Archive.png"/>
-</div>
-</div>
-</div>
-</section>
-<section class="max-w-7xl mx-auto px-8 py-20">
-<div class="flex flex-col md:flex-row justify-between items-end mb-10 border-b-2 border-[#111111] pb-4">
-<div>
-<h2 class="uppercase text-[#111111] typo-sec-02">Mix &amp; Match Guide</h2>
-<p class="text-gray-600 mt-2 typo-body-02">피치 위에서 일상까지. 트랙 셋업과 유니폼을 데일리 룩으로 즐기는 베론의 스타일링 팁.</p>
-</div>
-<a class="underline uppercase mt-4 md:mt-0 hover:text-[#1A3626] typo-menu-02" href="#">View All Styles</a>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-<div class="bg-white group p-4 border border-gray-200">
-<div class="h-64 mb-4 bg-[#F2EFE9] border border-gray-200 flex items-center justify-center relative overflow-hidden">
-<img alt="다크브라운 후디 매치" class="w-full h-full object-cover mix-blend-darken scale-[1.02]" src="./images/Look-01.png"/>
-<div class="absolute inset-0 bg-[#111111]/5 group-hover:bg-transparent transition-colors z-10"></div>
-</div>
-<div class="flex justify-between items-start mb-4">
-<div>
-<span class="bg-[#3C2A21] text-[#F2EFE9] px-2 py-1 uppercase typo-label-01">Style 01. City Boy</span>
-<h3 class="mt-3 text-[#111111] typo-sec-03">다크브라운 후디와 화이트 팬츠의 조화</h3>
-</div>
-<span class="text-[#3C2A21] typo-label-01">SET 10% OFF</span>
-</div>
-<div class="flex items-center gap-4 border-t border-gray-200 pt-4">
-<div class="flex items-center gap-3">
-<div class="w-16 h-16 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 flex items-center justify-center">
-<img alt="아치 로고 후디 다크브라운" class="w-full h-full object-cover mix-blend-darken scale-110" src="./images/BrownHoodie.png"/>
-</div>
-<div class="flex flex-col">
-<span class="text-gray-800 typo-item-02">아치 로고 후디 다크브라운</span>
-<button class="text-gray-500 text-left hover:text-[#1A3626] mt-1 typo-menu-02">[단품 담기 🛒]</button>
-</div>
-</div>
-<span class="text-gray-300 typo-body-02">+</span>
-<div class="flex items-center gap-3">
-<div class="w-16 h-16 bg-[#F2EFE9] border border-gray-200 overflow-hidden relative flex items-center justify-center">
-<img alt="에센셜 코튼 팬츠 화이트" class="w-full h-full object-cover mix-blend-darken scale-110" src="./images/WhitePants.png"/>
-</div>
-<div class="flex flex-col">
-<span class="text-gray-800 typo-item-02">에센셜 코튼 팬츠 화이트</span>
-<button class="text-gray-500 text-left hover:text-[#1A3626] mt-1 typo-menu-02">[단품 담기 🛒]</button>
-</div>
-</div>
-</div>
-<button class="w-full mt-4 border border-[#111111] py-3 hover:bg-[#111111] hover:text-white transition-colors typo-menu-02">이 스타일 세트 장바구니 담기</button>
-</div>
-<div class="bg-white group p-4 border border-gray-200">
-<div class="h-64 mb-4 bg-[#F2EFE9] border border-gray-200 flex items-center justify-center relative overflow-hidden">
-<img alt="베론 딥그린 홈 유니폼" class="w-full h-full object-cover mix-blend-darken scale-[1.02]" src="./images/Look-02.png"/>
-<div class="absolute inset-0 bg-[#111111]/5 group-hover:bg-transparent transition-colors z-10"></div>
-</div>
-<div class="flex justify-between items-start mb-4">
-<div>
-<span class="bg-[#3C2A21] text-[#F2EFE9] px-2 py-1 uppercase typo-label-01">Style 02. Block Core</span>
-<h3 class="mt-3 text-[#111111] typo-sec-03">딥그린 유니폼으로 완성하는 블록코어 룩</h3>
-</div>
-<span class="text-[#3C2A21] typo-label-01">SET 10% OFF</span>
-</div>
-<div class="flex items-center gap-4 border-t border-gray-200 pt-4">
-<div class="flex items-center gap-3">
-<div class="w-16 h-16 bg-[#F2EFE9] border border-gray-200 overflow-hidden relative flex items-center justify-center">
-<img alt="베론 딥그린 홈 유니폼" class="w-full h-full object-cover mix-blend-darken scale-110" src="./images/Home.png"/>
-</div>
-<div class="flex flex-col">
-<span class="text-gray-800 typo-item-02">베론 딥그린 홈 유니폼</span>
-<button class="text-gray-500 text-left hover:text-[#1A3626] mt-1 typo-menu-02">[단품 담기 🛒]</button>
-</div>
-</div>
-<span class="text-gray-300 typo-body-02">+</span>
-<div class="flex items-center gap-3">
-<div class="w-16 h-16 bg-[#F2EFE9] border border-gray-200 overflow-hidden relative flex items-center justify-center">
-<img alt="에센셜 코튼 팬츠 블랙" class="w-full h-full object-cover mix-blend-darken scale-110" src="./images/BlackPants.png"/>
-</div>
-<div class="flex flex-col">
-<span class="text-gray-800 typo-item-02">에센셜 코튼 팬츠 블랙</span>
-<button class="text-gray-500 text-left hover:text-[#1A3626] mt-1 typo-menu-02">[단품 담기 🛒]</button>
-</div>
-</div>
-</div>
-<button class="w-full mt-4 border border-[#111111] py-3 hover:bg-[#111111] hover:text-white transition-colors typo-menu-02">이 스타일 세트 장바구니 담기</button>
-</div>
-</div>
-</section>
-<section class="border-y-2 border-[#111111] bg-[#F2EFE9]">
-<div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
-<div class="w-full lg:w-1/2 h-80 lg:h-auto bg-[#F2EFE9] relative overflow-hidden border-r-0 lg:border-r border-[#111111]">
-<img alt="V-CLUB 매거진 및 룩북 화보" class="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-700" src="./images/BrandInfo.png"/>
-</div>
-<div class="w-full lg:w-1/2 p-10 lg:p-16 flex flex-col justify-center bg-[#1A3626] text-white">
-<h2 class="md:text-[48px] mb-2 uppercase typo-sec-01">Join The Retro Revolution</h2>
-<h3 class="md:text-[24px] mb-6 text-[#D2AE37] typo-sec-03">V-CLUB 단독 커뮤니티 혜택</h3>
-<ul class="space-y-4 mb-8 text-[#F2EFE9]">
-<li class="flex items-start typo-body-02">
-<span class="mr-3 text-[#D2AE37] typo-label-01">01</span>
-<span class="typo-body-01">매월 발행되는 <strong class="typo-body-02">V-CLUB 전용 디지털 룩북 &amp; 웹진</strong> 제공</span>
-</li>
-<li class="flex items-start typo-body-02">
-<span class="mr-3 text-[#D2AE37] typo-label-01">02</span>
-<span class="typo-body-01">신제품 발매 및 아카이브 한정판 <strong class="typo-body-02">얼리 액세스 (우선 구매권)</strong></span>
-</li>
-<li class="flex items-start typo-body-02">
-<span class="mr-3 text-[#D2AE37] typo-label-01">03</span>
-<span class="typo-body-01">나만의 유니폼을 위한 레트로 패치 증정 및 <strong class="typo-body-02">첫 구매 15% 할인</strong></span>
-</li>
-</ul>
-<div class="flex w-full mt-4">
-<input class="flex-1 px-4 py-3 text-[#3C2A21] bg-[#F2EFE9] outline-none placeholder-gray-500 border border-transparent focus:border-[#D2AE37] typo-menu-02" placeholder="이메일 주소를 입력하세요" type="email"/>
-<button class="bg-[#D2AE37] text-[#1A3626] py-3 px-6 hover:bg-[#C4A47C] transition-colors uppercase whitespace-nowrap typo-label-01">Subscribe</button>
-</div>
-</div>
-</div>
-</section>
-<section class="max-w-7xl mx-auto px-8 py-20">
-<div class="flex justify-between items-end mb-10">
-<div>
-<h2 class="uppercase text-[#111111] typo-sec-02">Customer Photo Reviews</h2>
-<p class="text-gray-600 mt-2 typo-body-02">베론과 함께 일상을 화보로 만드는 고객님들의 레트로 착장 갤러리</p>
-</div>
-<button class="border border-[#111111] px-4 py-2 hover:bg-[#111111] hover:text-white transition-colors hidden sm:block typo-menu-02">포토 리뷰 전체보기</button>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-<div class="polaroid transform -rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer">
-<div class="w-full h-56 relative mb-4 bg-[#F2EFE9] overflow-hidden flex items-center justify-center border border-gray-200">
-<img alt="딥그린 홈 유니폼" class="w-full h-full object-cover mix-blend-darken scale-110" src="./images/Home.png"/>
-<div class="absolute top-2 right-2 bg-[#3C2A21]/80 text-[#F2EFE9] px-2 py-1 rounded z-10 typo-label-01">@retro_boy</div>
-</div>
-<div class="text-[#D2AE37] mb-1 text-center typo-label-01">★★★★★</div>
-<div class="text-center text-gray-800 line-clamp-2 typo-body-02">"오버핏으로 입으려고 크게 샀는데 딱 원하던 핏. 딥그린 색감이 미쳤어요."</div>
-<div class="text-gray-500 text-center mt-3 border-t border-dashed border-gray-300 pt-3 typo-item-02">
+                    <li class="border-b-2 border-transparent hover:border-[#111111] pb-1 cursor-pointer text-center leading-[1.2]">
+                        WIND<br>BREAKER
+                    </li>
+                    <li class="border-b-2 border-transparent hover:border-[#111111] pb-1 cursor-pointer">HOODIE</li>
+                    <li class="border-b-2 border-transparent hover:border-[#111111] pb-1 cursor-pointer">BOTTOM</li>
+                    <li class="text-[#1A3626] border-b-2 border-transparent hover:border-[#1A3626] pb-1 cursor-pointer font-bold">ARCHIVE SALE</li>
+                </ul>
+
+                <div class="flex items-center space-x-6">
+                    <div class="flex items-center bg-white rounded-full px-4 py-2 w-48 lg:w-64 border border-gray-300 focus-within:border-[#1A3626] transition-all">
+                        <input type="text" placeholder="클래식 아이템 검색" class="bg-transparent outline-none w-full text-[12px] font-semibold leading-[1.33] tracking-normal text-gray-800 placeholder-gray-500">
+                        <button class="text-[12px] font-semibold leading-[1.33] tracking-normal text-gray-500 hover:text-[#1A3626] whitespace-nowrap ml-2">검색</button>
+                    </div>
+                    <div class="flex space-x-4">
+                        <div class="w-6 h-6 flex items-center justify-center border border-gray-300 rounded-sm text-[10px] cursor-pointer hover:border-[#1A3626] hover:text-[#1A3626] transition-colors bg-white" title="마이페이지">[👤]</div>
+                        <div class="w-6 h-6 flex items-center justify-center border border-gray-300 rounded-sm text-[10px] cursor-pointer hover:border-[#1A3626] hover:text-[#1A3626] transition-colors bg-white" title="위시리스트">[🖤]</div>
+                        <div class="w-6 h-6 flex items-center justify-center border border-gray-300 rounded-sm text-[10px] cursor-pointer hover:border-[#1A3626] hover:text-[#1A3626] transition-colors bg-white" title="장바구니">[🛒]</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 3. 메인 히어로 섹션 -->
+        <section class="w-full h-[600px] flex items-center justify-center flex-col mt-4 border-l-0 border-r-0 text-center relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="./images/BrandInfo.png" alt="VERONE 브랜드 스토리" class="w-full h-full object-cover object-center">
+            </div>
+            <div class="absolute inset-0 bg-black/40 z-0 pointer-events-none"></div>
+
+            <div class="z-10 flex flex-col items-center">
+                <h1 class="font-inika text-[64px] md:text-[128px] font-bold leading-[1.17] tracking-[-0.058em] text-[#F2EFE9] drop-shadow-md mt-4 mb-2 uppercase">VERONE</h1>
+                <p class="text-[16px] md:text-[24px] font-light leading-[1.33] tracking-[0.1em] text-[#D2AE37] uppercase drop-shadow-sm mb-10">클래식을 입고 새롭게 움직이다.</p>
+                <button class="bg-[#D2AE37] text-[#1A3626] text-[18px] font-semibold leading-[1.56] tracking-normal py-4 px-12 hover:bg-[#F2EFE9] border-2 border-transparent transition-colors shadow-[6px_6px_0px_0px_rgba(0,0,0,0.4)]">[레트로 컬렉션 스토어 이동]</button>
+            </div>
+        </section>
+
+        <!-- 4. 추천 캐러셀 (Editor's Pick) -->
+        <section class="max-w-7xl mx-auto px-8 py-16">
+            <div class="flex justify-between items-end mb-6">
+                <div>
+                    <h2 class="font-inika text-[32px] font-bold leading-none tracking-[0.01em] uppercase text-[#111111]">Editor's Pick</h2>
+                    <p class="text-[14px] font-semibold leading-[1.2] tracking-[0.01em] text-gray-600 mt-2">시대를 초월하는 마스터피스, 베론의 이번 시즌 에센셜 라인업</p>
+                </div>
+                <div class="flex space-x-2">
+                    <button class="w-8 h-8 flex items-center justify-center border border-gray-300 text-[12px] bg-white hover:bg-[#111111] hover:text-white transition-colors cursor-pointer">[◀]</button>
+                    <button class="w-8 h-8 flex items-center justify-center border border-gray-300 text-[12px] bg-white hover:bg-[#111111] hover:text-white transition-colors cursor-pointer">[▶]</button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 상품 1 -->
+                <div class="group cursor-pointer">
+                    <div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 flex items-center justify-center mb-3">
+                        <img src="./images/Home.jpg" alt="베론 딥그린 홈 유니폼" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 left-3 bg-[#1A3626] text-[#F2EFE9] text-[10px] px-2 py-1 font-bold z-10">HOT</div>
+                        <div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            <div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center text-xs hover:bg-[#F2EFE9]">[🖤]</div>
+                        </div>
+                    </div>
+                    <div class="text-[12px] font-semibold leading-[1.33] tracking-normal text-gray-500 mb-1">UNIFORM (HOME)</div>
+                    <div class="text-[16px] font-semibold leading-[1.5] tracking-normal mb-1 group-hover:text-[#1A3626] transition-colors">베론 딥그린 홈 유니폼</div>
+                    <div class="text-[18px] font-semibold leading-[1.56] tracking-normal text-[#111111]">89,000 원</div>
+                    <div class="text-[12px] font-semibold leading-[1.33] tracking-normal text-[#D2AE37] mt-1">★★★★★ (1,245)</div>
+                    <div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button class="flex-1 bg-white border border-[#111111] text-[#111111] text-[12px] font-semibold py-2.5 hover:bg-[#F2EFE9]">[장바구니]</button>
+                        <button class="flex-1 bg-[#111111] text-white text-[12px] font-semibold py-2.5 hover:bg-[#1A3626] border-2 border-[#111111]">[바로구매]</button>
+                    </div>
+                </div>
+                <!-- 상품 2 -->
+                <div class="group cursor-pointer">
+                    <div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 flex items-center justify-center mb-3">
+                        <img src="./images/WindGreen.png" alt="헤리티지 윈드브레이커 딥그린" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            <div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center text-xs hover:bg-[#F2EFE9]">[🖤]</div>
+                        </div>
+                    </div>
+                    <div class="text-[12px] font-semibold leading-[1.33] tracking-normal text-gray-500 mb-1">WINDBREAKER</div>
+                    <div class="text-[16px] font-semibold leading-[1.5] tracking-normal mb-1 group-hover:text-[#1A3626] transition-colors">헤리티지 윈드브레이커 딥그린</div>
+                    <div class="text-[18px] font-semibold leading-[1.56] tracking-normal text-[#111111]">129,000 원</div>
+                    <div class="text-[12px] font-semibold leading-[1.33] tracking-normal text-[#D2AE37] mt-1">★★★★☆ (892)</div>
+                    <div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button class="flex-1 bg-white border border-[#111111] text-[#111111] text-[12px] font-semibold py-2.5 hover:bg-[#F2EFE9]">[장바구니]</button>
+                        <button class="flex-1 bg-[#111111] text-white text-[12px] font-semibold py-2.5 hover:bg-[#1A3626] border-2 border-[#111111]">[바로구매]</button>
+                    </div>
+                </div>
+                <!-- 상품 3 -->
+                <div class="group cursor-pointer">
+                    <div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 flex items-center justify-center mb-3">
+                        <img src="./images/BrownHoodie.png" alt="에센셜 아치 로고 후디 다크브라운" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            <div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center text-xs hover:bg-[#F2EFE9]">[🖤]</div>
+                        </div>
+                    </div>
+                    <div class="text-[12px] font-semibold leading-[1.33] tracking-normal text-gray-500 mb-1">HOODIE</div>
+                    <div class="text-[16px] font-semibold leading-[1.5] tracking-normal mb-1 group-hover:text-[#1A3626] transition-colors">에센셜 아치 로고 후디 다크브라운</div>
+                    <div class="text-[18px] font-semibold leading-[1.56] tracking-normal text-[#111111]">79,000 원</div>
+                    <div class="text-[12px] font-semibold leading-[1.33] tracking-normal text-[#D2AE37] mt-1">★★★★★ (3,412)</div>
+                    <div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button class="flex-1 bg-white border border-[#111111] text-[#111111] text-[12px] font-semibold py-2.5 hover:bg-[#F2EFE9]">[장바구니]</button>
+                        <button class="flex-1 bg-[#111111] text-white text-[12px] font-semibold py-2.5 hover:bg-[#1A3626] border-2 border-[#111111]">[바로구매]</button>
+                    </div>
+                </div>
+                <!-- 상품 4 -->
+                <div class="group cursor-pointer">
+                    <div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 flex items-center justify-center mb-3">
+                        <img src="./images/Jumper.png" alt="아이코닉 바시티 재킷 딥그린" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                            <div class="w-8 h-8 bg-white border border-gray-400 flex items-center justify-center text-xs hover:bg-[#F2EFE9]">[🖤]</div>
+                        </div>
+                    </div>
+                    <div class="text-[12px] font-semibold leading-[1.33] tracking-normal text-gray-500 mb-1">VARSITY JACKET</div>
+                    <div class="text-[16px] font-semibold leading-[1.5] tracking-normal mb-1 group-hover:text-[#1A3626] transition-colors">아이코닉 바시티 재킷 딥그린</div>
+                    <div class="text-[18px] font-semibold leading-[1.56] tracking-normal text-[#111111]">159,000 원</div>
+                    <div class="text-[12px] font-semibold leading-[1.33] tracking-normal text-[#D2AE37] mt-1">★★★★☆ (512)</div>
+                    <div class="flex space-x-2 mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button class="flex-1 bg-white border border-[#111111] text-[#111111] text-[12px] font-semibold py-2.5 hover:bg-[#F2EFE9]">[장바구니]</button>
+                        <button class="flex-1 bg-[#111111] text-white text-[12px] font-semibold py-2.5 hover:bg-[#1A3626] border-2 border-[#111111]">[바로구매]</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 베스트 셀러 -->
+        <section class="max-w-7xl mx-auto px-8 py-12 border-t border-gray-300">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
+                <div>
+                    <h2 class="font-inika text-[32px] font-bold leading-none tracking-[0.01em] uppercase text-[#111111]">Best Sellers</h2>
+                    <div class="flex flex-wrap gap-x-5 gap-y-2 mt-4 text-[14px] font-semibold leading-[1.2] tracking-[0.01em] text-gray-400 uppercase">
+                        <span class="text-[#111111] border-b-2 border-[#111111] pb-1 cursor-pointer">ALL</span>
+                        <span class="cursor-pointer hover:text-[#111111]">CLASSIC ARCHIVE</span>
+                        <span class="cursor-pointer hover:text-[#111111]">FOOTBALL CLUB</span>
+                        <span class="cursor-pointer hover:text-[#111111]">TRACK & FIELD</span>
+                        <span class="cursor-pointer hover:text-[#111111]">STREET DAILY</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-12">
+                <!-- 베스트 아이템들 -->
+                <div class="group cursor-pointer flex flex-col relative">
+                    <div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 mb-3 flex items-center justify-center">
+                        <img src="./images/Away.jpg" alt="베론 어웨이" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform">
+                        <div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] text-lg font-black w-10 h-10 flex items-center justify-center z-10">1</div>
+                    </div>
+                    <div class="text-[12px] font-semibold text-gray-500 mb-1">UNIFORM (AWAY)</div>
+                    <div class="text-[16px] font-semibold text-[#111111]">베론 어웨이 크림 유니폼</div>
+                    <div class="text-[18px] font-semibold mt-1">89,000 원</div>
+                </div>
+                
+                <div class="group cursor-pointer flex flex-col relative">
+                    <div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 mb-3 flex items-center justify-center">
+                        <img src="./images/Third.jpg" alt="베론 써드" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform">
+                        <div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] text-lg font-black w-10 h-10 flex items-center justify-center z-10">2</div>
+                    </div>
+                    <div class="text-[12px] font-semibold text-gray-500 mb-1">UNIFORM (THIRD)</div>
+                    <div class="text-[16px] font-semibold text-[#111111]">베론 써드 유니폼 다크브라운</div>
+                    <div class="text-[18px] font-semibold mt-1">99,000 원</div>
+                </div>
+
+                <div class="group cursor-pointer flex flex-col relative">
+                    <div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 mb-3 flex items-center justify-center">
+                        <img src="./images/WhitePants.png" alt="코튼 팬츠 화이트" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform">
+                        <div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] text-lg font-black w-10 h-10 flex items-center justify-center z-10">3</div>
+                    </div>
+                    <div class="text-[12px] font-semibold text-gray-500 mb-1">BOTTOM</div>
+                    <div class="text-[16px] font-semibold text-[#111111]">에센셜 코튼 팬츠 화이트</div>
+                    <div class="text-[18px] font-semibold mt-1">69,000 원</div>
+                </div>
+
+                <div class="group cursor-pointer flex flex-col relative">
+                    <div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 mb-3 flex items-center justify-center">
+                        <img src="./images/BlackPants.png" alt="코튼 팬츠 블랙" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform">
+                        <div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] text-lg font-black w-10 h-10 flex items-center justify-center z-10">4</div>
+                    </div>
+                    <div class="text-[12px] font-semibold text-gray-500 mb-1">BOTTOM</div>
+                    <div class="text-[16px] font-semibold text-[#111111]">에센셜 코튼 팬츠 블랙</div>
+                    <div class="text-[18px] font-semibold mt-1">69,000 원</div>
+                </div>
+
+                <div class="group cursor-pointer flex flex-col relative">
+                    <div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 mb-3 flex items-center justify-center">
+                        <img src="./images/WindBlack.png" alt="솔리드 블랙 윈드브레이커" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform">
+                        <div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] text-lg font-black w-10 h-10 flex items-center justify-center z-10">5</div>
+                    </div>
+                    <div class="text-[12px] font-semibold text-gray-500 mb-1">WINDBREAKER</div>
+                    <div class="text-[16px] font-semibold text-[#111111]">솔리드 블랙 윈드브레이커</div>
+                    <div class="text-[18px] font-semibold mt-1">129,000 원</div>
+                </div>
+
+                <div class="group cursor-pointer flex flex-col relative">
+                    <div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 mb-3 flex items-center justify-center">
+                        <img src="./images/WindBrown.png" alt="오리지널 다크브라운 윈드브레이커" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform">
+                        <div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] text-lg font-black w-10 h-10 flex items-center justify-center z-10">6</div>
+                    </div>
+                    <div class="text-[12px] font-semibold text-gray-500 mb-1">WINDBREAKER</div>
+                    <div class="text-[16px] font-semibold text-[#111111]">오리지널 다크브라운 윈드브레이커</div>
+                    <div class="text-[18px] font-semibold mt-1">129,000 원</div>
+                </div>
+
+                <div class="group cursor-pointer flex flex-col relative">
+                    <div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 mb-3 flex items-center justify-center">
+                        <img src="./images/Jumper.png" alt="아이코닉 바시티 재킷 딥그린" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform">
+                        <div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] text-lg font-black w-10 h-10 flex items-center justify-center z-10">7</div>
+                    </div>
+                    <div class="text-[12px] font-semibold text-gray-500 mb-1">VARSITY JACKET</div>
+                    <div class="text-[16px] font-semibold text-[#111111]">아이코닉 바시티 재킷 딥그린</div>
+                    <div class="text-[18px] font-semibold mt-1">159,000 원</div>
+                </div>
+
+                <div class="group cursor-pointer flex flex-col relative">
+                    <div class="w-full h-80 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 mb-3 flex items-center justify-center">
+                        <img src="./images/GreenHoodie.png" alt="에센셜 아치 로고 후디 딥그린" class="w-full h-full object-cover mix-blend-darken scale-[1.02] group-hover:scale-105 transition-transform">
+                        <div class="absolute top-0 left-0 bg-[#1A3626] text-[#F2EFE9] text-lg font-black w-10 h-10 flex items-center justify-center z-10">8</div>
+                    </div>
+                    <div class="text-[12px] font-semibold text-gray-500 mb-1">HOODIE</div>
+                    <div class="text-[16px] font-semibold text-[#111111]">에센셜 아치 로고 후디 딥그린</div>
+                    <div class="text-[18px] font-semibold mt-1">79,000 원</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6-1. 아카이브 섹션 1: The Digital Museum (전시 목적) -->
+        <section class="relative text-white py-20 mt-8 border-t-[12px] border-[#3C2A21] bg-[#111111] overflow-hidden">
+            <!-- 1950~60년대 코튼 피케/캔버스 직물 느낌의 미세한 패턴 오버레이 -->
+            <div class="absolute inset-0 z-0 pointer-events-none opacity-40" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%224%22 height=%224%22%3E%3Cpath d=%22M1 3h1v1H1V3zm2-2h1v1H3V1z%22 fill=%22%23ffffff%22 fill-opacity=%220.08%22/%3E%3C/svg%3E');"></div>
+            <!-- 거친 노이즈 질감으로 아카이브의 시간적 깊이감 추가 -->
+            <div class="absolute inset-0 z-0 pointer-events-none opacity-30 mix-blend-overlay" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.85%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22/%3E%3C/svg%3E');"></div>
+            
+            <div class="relative z-10 max-w-7xl mx-auto px-8 text-center mb-16">
+                <span class="text-[#D2AE37] text-[14px] font-semibold leading-[1.43] tracking-[0.3em] mb-2 block uppercase">EXHIBITION 2026</span>
+                <h2 class="font-inika text-[32px] md:text-[48px] font-semibold leading-none tracking-normal mb-4 uppercase">The Digital Museum</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto text-[14px]">베론의 영광스러운 과거 디자인 유산을 복원합니다. <br>1994년 챔피언십 우승 당시의 오리지널 킷을 디지털 갤러리에서 만나보세요.</p>
+            </div>
+            
+            <!-- 갤러리 뷰 (이미지 3장 나열) -->
+            <div class="relative z-10 max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- 뮤지엄: 홈 킷 -->
+                <div class="bg-black/50 border border-gray-800 p-4 group cursor-pointer hover:border-gray-500 transition-colors">
+                    <div class="w-full h-64 bg-[#1A1A1A] relative overflow-hidden flex items-center justify-center">
+                        <img src="./images/HomeMuseum.png" alt="1994 홈 킷" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity scale-105 grayscale-[30%] group-hover:grayscale-0">
+                    </div>
+                    <div class="mt-4 text-center">
+                        <h4 class="font-inika text-[18px] text-[#F2EFE9] uppercase mb-1 font-semibold tracking-wide">1994 Home Kit</h4>
+                        <p class="text-[12px] text-gray-500 font-mono tracking-wider">Archive No. 001</p>
+                    </div>
+                </div>
+                <!-- 뮤지엄: 어웨이 킷 -->
+                <div class="bg-black/50 border border-gray-800 p-4 group cursor-pointer hover:border-gray-500 transition-colors">
+                    <div class="w-full h-64 bg-[#1A1A1A] relative overflow-hidden flex items-center justify-center">
+                        <img src="./images/AwayMuseum.png" alt="1994 어웨이 킷" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity scale-105 grayscale-[30%] group-hover:grayscale-0">
+                    </div>
+                    <div class="mt-4 text-center">
+                        <h4 class="font-inika text-[18px] text-[#F2EFE9] uppercase mb-1 font-semibold tracking-wide">1994 Away Kit</h4>
+                        <p class="text-[12px] text-gray-500 font-mono tracking-wider">Archive No. 042</p>
+                    </div>
+                </div>
+                <!-- 뮤지엄: 써드 킷 -->
+                <div class="bg-black/50 border border-gray-800 p-4 group cursor-pointer hover:border-gray-500 transition-colors">
+                    <div class="w-full h-64 bg-[#1A1A1A] relative overflow-hidden flex items-center justify-center">
+                        <img src="./images/ThirdMuseum.png" alt="1994 써드 킷" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity scale-105 grayscale-[30%] group-hover:grayscale-0">
+                    </div>
+                    <div class="mt-4 text-center">
+                        <h4 class="font-inika text-[18px] text-[#F2EFE9] uppercase mb-1 font-semibold tracking-wide">1994 Third Kit</h4>
+                        <p class="text-[12px] text-gray-500 font-mono tracking-wider">Archive No. 108</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="border border-gray-500 text-gray-300 font-semibold text-[14px] py-3 px-8 hover:bg-white hover:text-black transition-colors uppercase tracking-[0.1em]">[뮤지엄 전체 입장]</button>
+            </div>
+        </section>
+
+        <!-- 7. 믹스 매치 가이드 -->
+        <section class="max-w-7xl mx-auto px-8 py-20">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-10 border-b-2 border-[#111111] pb-4">
+                <div>
+                    <h2 class="font-inika text-[38px] font-bold leading-[1.05] tracking-normal uppercase text-[#111111]">Mix & Match Guide</h2>
+                    <p class="text-[14px] text-gray-600 mt-2">피치 위에서 일상까지. 트랙 셋업과 유니폼을 데일리 룩으로 즐기는 베론의 스타일링 팁.</p>
+                </div>
+                <a href="#" class="text-[14px] font-semibold underline uppercase mt-4 md:mt-0 hover:text-[#1A3626]">View All Styles</a>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <!-- 스타일 가이드 1: 다크브라운 후드 & 코튼팬츠 (화이트) -->
+                <div class="bg-white group p-4 border border-gray-200">
+                    <div class="h-64 mb-4 bg-[#F2EFE9] border border-gray-200 flex items-center justify-center relative overflow-hidden">
+                        <img src="./images/BrownHoodie.png" alt="다크브라운 후디 매치" class="w-full h-full object-cover mix-blend-darken scale-[1.02]">
+                        <div class="absolute inset-0 bg-[#111111]/5 group-hover:bg-transparent transition-colors z-10"></div>
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-[12px] font-semibold leading-[1.33] tracking-normal bg-[#3C2A21] text-[#F2EFE9] px-2 py-1 uppercase">Style 01. City Boy</span>
+                            <h3 class="text-[24px] font-semibold leading-none tracking-[0.01em] mt-3 text-[#111111]">다크브라운 후디와 화이트 팬츠의 조화</h3>
+                        </div>
+                        <span class="text-[12px] font-semibold leading-[1.33] text-[#3C2A21]">SET 10% OFF</span>
+                    </div>
+                    
+                    <div class="flex items-center gap-4 border-t border-gray-200 pt-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-16 h-16 relative overflow-hidden bg-[#F2EFE9] border border-gray-200 flex items-center justify-center">
+                                <img src="./images/BrownHoodie.png" alt="아치 로고 후디 다크브라운" class="w-full h-full object-cover mix-blend-darken scale-110">
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-[12px] font-semibold leading-[1.33] tracking-normal text-gray-800">아치 로고 후디 다크브라운</span>
+                                <button class="text-[10px] text-gray-500 text-left hover:text-[#1A3626] mt-1">[단품 담기 🛒]</button>
+                            </div>
+                        </div>
+                        <span class="text-gray-300 font-black">+</span>
+                        <div class="flex items-center gap-3">
+                            <div class="w-16 h-16 bg-[#F2EFE9] border border-gray-200 overflow-hidden relative flex items-center justify-center">
+                                <img src="./images/WhitePants.png" alt="에센셜 코튼 팬츠 화이트" class="w-full h-full object-cover mix-blend-darken scale-110">
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-[12px] font-semibold leading-[1.33] tracking-normal text-gray-800">에센셜 코튼 팬츠 화이트</span>
+                                <button class="text-[10px] text-gray-500 text-left hover:text-[#1A3626] mt-1">[단품 담기 🛒]</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="w-full mt-4 border border-[#111111] py-3 text-[14px] font-semibold hover:bg-[#111111] hover:text-white transition-colors">이 스타일 세트 장바구니 담기</button>
+                </div>
+
+                <!-- 스타일 가이드 2: 유니폼 & 팬츠 (블랙) -->
+                <div class="bg-white group p-4 border border-gray-200">
+                    <div class="h-64 mb-4 bg-[#F2EFE9] border border-gray-200 flex items-center justify-center relative overflow-hidden">
+                        <img src="./images/Home.jpg" alt="베론 딥그린 홈 유니폼" class="w-full h-full object-cover mix-blend-darken scale-[1.02]">
+                        <div class="absolute inset-0 bg-[#111111]/5 group-hover:bg-transparent transition-colors z-10"></div>
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <span class="text-[12px] font-semibold leading-[1.33] tracking-normal bg-[#3C2A21] text-[#F2EFE9] px-2 py-1 uppercase">Style 02. Block Core</span>
+                            <h3 class="text-[24px] font-semibold leading-none tracking-[0.01em] mt-3 text-[#111111]">딥그린 유니폼으로 완성하는 블록코어 룩</h3>
+                        </div>
+                        <span class="text-[12px] font-semibold leading-[1.33] text-[#3C2A21]">SET 10% OFF</span>
+                    </div>
+                    
+                    <div class="flex items-center gap-4 border-t border-gray-200 pt-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-16 h-16 bg-[#F2EFE9] border border-gray-200 overflow-hidden relative flex items-center justify-center">
+                                <img src="./images/Home.jpg" alt="베론 딥그린 홈 유니폼" class="w-full h-full object-cover mix-blend-darken scale-110">
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-[12px] font-semibold leading-[1.33] tracking-normal text-gray-800">베론 딥그린 홈 유니폼</span>
+                                <button class="text-[10px] text-gray-500 text-left hover:text-[#1A3626] mt-1">[단품 담기 🛒]</button>
+                            </div>
+                        </div>
+                        <span class="text-gray-300 font-black">+</span>
+                        <div class="flex items-center gap-3">
+                            <div class="w-16 h-16 bg-[#F2EFE9] border border-gray-200 overflow-hidden relative flex items-center justify-center">
+                                <img src="./images/BlackPants.png" alt="에센셜 코튼 팬츠 블랙" class="w-full h-full object-cover mix-blend-darken scale-110">
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-[12px] font-semibold leading-[1.33] tracking-normal text-gray-800">에센셜 코튼 팬츠 블랙</span>
+                                <button class="text-[10px] text-gray-500 text-left hover:text-[#1A3626] mt-1">[단품 담기 🛒]</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="w-full mt-4 border border-[#111111] py-3 text-[14px] font-semibold hover:bg-[#111111] hover:text-white transition-colors">이 스타일 세트 장바구니 담기</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-y-2 border-[#111111] bg-[#F2EFE9]">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row">
+                <div class="w-full lg:w-1/2 h-80 lg:h-auto bg-[#F2EFE9] relative overflow-hidden border-r-0 lg:border-r border-[#111111]">
+                    <img src="./images/BrandInfo.png" alt="V-CLUB 커뮤니티" class="w-full h-full object-cover">
+                </div>
+                <div class="w-full lg:w-1/2 p-10 lg:p-16 flex flex-col justify-center bg-[#1A3626] text-white">
+                    <h2 class="font-inika text-[32px] md:text-[48px] font-bold leading-[1.05] tracking-normal mb-2 uppercase">JOIN THE RETRO REVOLUTION</h2>
+                    <h3 class="text-[20px] md:text-[24px] font-semibold leading-none tracking-[0.01em] mb-6 text-[#D2AE37]">V-CLUB 단독 커뮤니티 혜택</h3>
+                    
+                    <ul class="space-y-4 mb-8 text-[14px] text-[#F2EFE9]">
+                        <li class="flex items-start">
+                            <span class="mr-3 font-semibold text-[#D2AE37]">01</span>
+                            <span>매월 발행되는 V-CLUB 전용 디지털 룩북 & 웹진 제공</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-3 font-semibold text-[#D2AE37]">02</span>
+                            <span>신제품 발매 및 아카이브 한정판 얼리 액세스 (우선 구매권)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-3 font-semibold text-[#D2AE37]">03</span>
+                            <span>나만의 유니폼을 위한 레트로 패치 증정 및 첫 구매 15% 할인</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="flex w-full mt-4">
+                        <input type="email" placeholder="이메일 주소를 입력하세요" class="flex-1 px-4 py-3 text-[#3C2A21] bg-[#F2EFE9] text-[14px] outline-none placeholder-gray-500 border border-transparent focus:border-[#D2AE37]">
+                        <button class="bg-[#D2AE37] text-[#1A3626] text-[14px] font-bold py-3 px-6 hover:bg-[#C4A47C] transition-colors uppercase tracking-[0.1em] whitespace-nowrap">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 9. 고객 리뷰 -->
+        <section class="max-w-7xl mx-auto px-8 py-20 border-t border-gray-300">
+            <div class="flex justify-between items-end mb-10">
+                <div>
+                    <h2 class="font-inika text-[38px] font-bold leading-none tracking-[0.01em] uppercase text-[#111111]">CUSTOMER PHOTO REVIEWS</h2>
+                    <p class="text-gray-600 mt-2 text-[14px]">베론과 함께 일상을 화보로 만드는 고객님들의 레트로 착장 갤러리</p>
+                </div>
+                <button class="text-[14px] font-semibold border border-[#111111] px-4 py-2 hover:bg-[#111111] hover:text-white transition-colors hidden sm:block">포토 리뷰 전체보기</button>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- 폴라로이드 1 -->
+                <div class="polaroid transform -rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer">
+                    <div class="w-full h-56 relative mb-4 bg-[#F2EFE9] overflow-hidden flex items-center justify-center border border-gray-200">
+                        <img src="./images/Home.jpg" alt="딥그린 홈 유니폼" class="w-full h-full object-cover mix-blend-darken scale-110">
+                        <div class="absolute top-2 right-2 bg-[#3C2A21]/80 text-[#F2EFE9] text-[10px] px-2 py-1 rounded z-10">@retro_boy</div>
+                    </div>
+                    <div class="text-[#D2AE37] text-[14px] mb-1 text-center">★★★★★</div>
+                    <div class="text-[14px] font-semibold text-center text-gray-800 line-clamp-2 leading-snug">"오버핏으로 입으려고 크게 샀는데 딱 원하던 핏. 딥그린 색감이 미쳤어요."</div>
+                    <div class="text-[12px] text-gray-500 text-center mt-3 border-t border-dashed border-gray-300 pt-3">
                         베론 딥그린 홈 유니폼
                     </div>
-</div>
-<div class="polaroid transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer">
-<div class="w-full h-56 relative mb-4 bg-[#F2EFE9] overflow-hidden flex items-center justify-center border border-gray-200">
-<img alt="솔리드 블랙 윈드브레이커" class="w-full h-full object-cover mix-blend-darken scale-110" src="./images/WindBlack.png"/>
-<div class="absolute top-2 right-2 bg-[#3C2A21]/80 text-[#F2EFE9] px-2 py-1 rounded z-10 typo-label-01">@vin_tage99</div>
-</div>
-<div class="text-[#D2AE37] mb-1 text-center typo-label-01">★★★★☆</div>
-<div class="text-center text-gray-800 line-clamp-2 typo-body-02">"바람막이 정착템. 바스락거리는 나일론 질감이 완전 취향저격입니다."</div>
-<div class="text-gray-500 text-center mt-3 border-t border-dashed border-gray-300 pt-3 typo-item-02">
+                </div>
+
+                <!-- 폴라로이드 2 -->
+                <div class="polaroid transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer">
+                    <div class="w-full h-56 relative mb-4 bg-[#F2EFE9] overflow-hidden flex items-center justify-center border border-gray-200">
+                        <img src="./images/WindBlack.png" alt="솔리드 블랙 윈드브레이커" class="w-full h-full object-cover mix-blend-darken scale-110">
+                        <div class="absolute top-2 right-2 bg-[#3C2A21]/80 text-[#F2EFE9] text-[10px] px-2 py-1 rounded z-10">@vin_tage99</div>
+                    </div>
+                    <div class="text-[#D2AE37] text-[14px] mb-1 text-center">★★★★☆</div>
+                    <div class="text-[14px] font-semibold text-center text-gray-800 line-clamp-2 leading-snug">"바람막이 정착템. 바스락거리는 나일론 질감이 완전 취향저격입니다."</div>
+                    <div class="text-[12px] text-gray-500 text-center mt-3 border-t border-dashed border-gray-300 pt-3">
                         솔리드 블랙 윈드브레이커
                     </div>
-</div>
-<div class="polaroid transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer">
-<div class="w-full h-56 relative mb-4 bg-[#F2EFE9] overflow-hidden flex items-center justify-center border border-gray-200">
-<img alt="에센셜 아치 로고 후디 다크브라운" class="w-full h-full object-cover mix-blend-darken scale-110" src="./images/BrownHoodie.png"/>
-<div class="absolute top-2 right-2 bg-[#3C2A21]/80 text-[#F2EFE9] px-2 py-1 rounded z-10 typo-label-01">@socc_er_luv</div>
-</div>
-<div class="text-[#D2AE37] mb-1 text-center typo-label-01">★★★★★</div>
-<div class="text-center text-gray-800 line-clamp-2 typo-body-02">"다크브라운 컬러가 너무 고급스럽고 화이트 팬츠에 매치해도 찰떡이에요."</div>
-<div class="text-gray-500 text-center mt-3 border-t border-dashed border-gray-300 pt-3 typo-item-02">
+                </div>
+
+                <!-- 폴라로이드 3 -->
+                <div class="polaroid transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer">
+                    <div class="w-full h-56 relative mb-4 bg-[#F2EFE9] overflow-hidden flex items-center justify-center border border-gray-200">
+                        <img src="./images/BrownHoodie.png" alt="에센셜 아치 로고 후디 다크브라운" class="w-full h-full object-cover mix-blend-darken scale-110">
+                        <div class="absolute top-2 right-2 bg-[#3C2A21]/80 text-[#F2EFE9] text-[10px] px-2 py-1 rounded z-10">@socc_er_luv</div>
+                    </div>
+                    <div class="text-[#D2AE37] text-[14px] mb-1 text-center">★★★★★</div>
+                    <div class="text-[14px] font-semibold text-center text-gray-800 line-clamp-2 leading-snug">"다크브라운 컬러가 너무 고급스럽고 화이트 팬츠에 매치해도 찰떡이에요."</div>
+                    <div class="text-[12px] text-gray-500 text-center mt-3 border-t border-dashed border-gray-300 pt-3">
                         에센셜 아치 로고 후디 다크브라운
                     </div>
-</div>
-<div class="polaroid transform rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer">
-<div class="w-full h-56 relative mb-4 bg-[#F2EFE9] overflow-hidden flex items-center justify-center border border-gray-200">
-<img alt="아이코닉 바시티 재킷 딥그린" class="w-full h-full object-cover mix-blend-darken scale-110" src="./images/Jumper.png"/>
-<div class="absolute top-2 right-2 bg-[#3C2A21]/80 text-[#F2EFE9] px-2 py-1 rounded z-10 typo-label-01">@hoo_d_man</div>
-</div>
-<div class="text-[#D2AE37] mb-1 text-center typo-label-01">★★★★★</div>
-<div class="text-center text-gray-800 line-clamp-2 typo-body-02">"원단이 탄탄하고 묵직해서 초겨울까지도 거뜬합니다. 핏 대만족."</div>
-<div class="text-gray-500 text-center mt-3 border-t border-dashed border-gray-300 pt-3 typo-item-02">
+                </div>
+
+                <!-- 폴라로이드 4 -->
+                <div class="polaroid transform rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer">
+                    <div class="w-full h-56 relative mb-4 bg-[#F2EFE9] overflow-hidden flex items-center justify-center border border-gray-200">
+                        <img src="./images/Jumper.png" alt="아이코닉 바시티 재킷 딥그린" class="w-full h-full object-cover mix-blend-darken scale-110">
+                        <div class="absolute top-2 right-2 bg-[#3C2A21]/80 text-[#F2EFE9] text-[10px] px-2 py-1 rounded z-10">@hoo_d_man</div>
+                    </div>
+                    <div class="text-[#D2AE37] text-[14px] mb-1 text-center">★★★★★</div>
+                    <div class="text-[14px] font-semibold text-center text-gray-800 line-clamp-2 leading-snug">"원단이 탄탄하고 묵직해서 초겨울까지도 거뜬합니다. 핏 대만족."</div>
+                    <div class="text-[12px] text-gray-500 text-center mt-3 border-t border-dashed border-gray-300 pt-3">
                         아이코닉 바시티 재킷 딥그린
                     </div>
-</div>
-</div>
-<button class="w-full mt-8 border border-[#111111] py-4 hover:bg-[#111111] hover:text-white transition-colors sm:hidden typo-menu-02">포토 리뷰 전체보기</button>
-</section>
-</main>
-<footer class="bg-[#111111] text-[#F2EFE9] pt-16 pb-12 border-t-[6px] border-[#1A3626]">
-<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-<div id="help">
-<h3 class="mb-5 uppercase text-[#D2AE37] typo-label-01">HELP / CS Center</h3>
-<ul class="text-gray-400 space-y-3">
-<li class="typo-body-02"><a class="hover:text-white transition-colors typo-body-02" href="#">자주 묻는 질문 (FAQ)</a></li>
-<li class="typo-body-02"><a class="hover:text-white transition-colors text-gray-200 typo-body-02" href="#">배송 / 교환 / 환불 정책 안내</a></li>
-<li class="typo-body-02"><a class="hover:text-white transition-colors typo-menu-02" href="#">실측 사이즈 가이드</a></li>
-<li class="typo-body-02"><a class="hover:text-white transition-colors typo-body-02" href="#">멤버십 쿠폰 및 마일리지 안내</a></li>
-<li class="pt-2 typo-body-02">
-<span class="block text-white mb-1 typo-body-02">1588-0000</span>
-<span class="typo-body-02">운영시간: 평일 10:00 - 17:00<br/>(점심시간 12:00 - 13:00 / 주말 휴무)</span>
-</li>
-</ul>
-</div>
-<div>
-<h3 class="mb-5 uppercase text-[#D2AE37] typo-label-01">SHOP</h3>
-<ul class="text-gray-400 space-y-3">
-<li class="typo-body-02"><a class="hover:text-white transition-colors typo-body-02" href="#">UNIFORM (HOME / AWAY / THIRD)</a></li>
-<li class="typo-body-02"><a class="hover:text-white transition-colors typo-body-02" href="#">BOTTOM (WHITE / BLACK)</a></li>
-<li class="typo-body-02"><a class="hover:text-white transition-colors typo-item-01" href="#">WINDBREAKER</a></li>
-<li class="typo-body-02"><a class="hover:text-white transition-colors typo-item-01" href="#">HOODIE</a></li>
-<li class="typo-body-02"><a class="hover:text-white transition-colors typo-item-01" href="#">VARSITY JACKET</a></li>
-</ul>
-</div>
-<div>
-<h3 class="mb-5 uppercase text-[#D2AE37] typo-label-01">ABOUT VERONE</h3>
-<ul class="text-gray-400 space-y-3">
-<li class="typo-body-02"><a class="hover:text-white transition-colors typo-body-02" href="#">브랜드 스토리텔링</a></li>
-<li class="typo-body-02"><a class="hover:text-white transition-colors typo-body-02" href="#">디지털 뮤지엄 (Archive)</a></li>
-<li class="typo-body-02"><a class="hover:text-white transition-colors typo-body-02" href="#">오프라인 스토어 안내</a></li>
-<li class="typo-body-02"><a class="hover:text-white transition-colors typo-body-02" href="#">제휴 및 입점 문의</a></li>
-</ul>
-</div>
-<div>
-<div class="mb-2 text-white typo-sec-01">VERONE</div>
-<p class="text-gray-400 mb-6 typo-body-02">Classic Never Dies. Since 1994</p>
-<h4 class="text-[#D2AE37] mb-2 uppercase typo-label-01">Follow Us</h4>
-<div class="flex space-x-3 mb-8">
-<a class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white hover:bg-[#1A3626] transition-colors typo-label-01" href="#" title="Instagram">IG</a>
-<a class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white hover:bg-[#1A3626] transition-colors typo-label-01" href="#" title="YouTube">YT</a>
-<a class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white hover:bg-[#1A3626] transition-colors typo-label-01" href="#" title="X (Twitter)">X</a>
-</div>
-<h4 class="text-[#D2AE37] mb-2 uppercase typo-label-01">Secure Payment</h4>
-<div class="flex gap-2 flex-wrap">
-<div class="px-2 py-1 bg-white text-[#111111] rounded-sm typo-label-01">VISA</div>
-<div class="px-2 py-1 bg-white text-[#111111] rounded-sm typo-label-01">MASTER</div>
-<div class="px-2 py-1 bg-[#FEE500] text-[#191919] rounded-sm typo-label-01">KakaoPay</div>
-<div class="px-2 py-1 bg-[#03C75A] text-white rounded-sm typo-label-01">N Pay</div>
-</div>
-</div>
-</div>
-<div class="max-w-7xl mx-auto px-8 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500">
-<div class="flex space-x-4 mb-4 md:mb-0">
-<a class="hover:text-white text-gray-300 typo-body-02" href="#">이용약관</a>
-<a class="hover:text-white text-gray-300 typo-body-02" href="#">개인정보 처리방침</a>
-<a class="hover:text-white typo-body-02" href="#">사업자정보확인</a>
-</div>
-<div class="text-right typo-body-02">
-                (주)베론 스포츠웨어 | 대표자: 홍길동 | 사업자등록번호: 123-45-67890<br/>
-                통신판매업신고: 2026-서울강남-01234 | 서울특별시 강남구 테헤란로 123 베론타워<br/>
-<span class="mt-2 block typo-body-02">© 2026 VERONE SPORTSWEAR. ALL RIGHTS RESERVED.</span>
-</div>
-</div>
-</footer>
+                </div>
+            </div>
+            <button class="w-full mt-8 text-[14px] font-semibold border border-[#111111] py-4 hover:bg-[#111111] hover:text-white transition-colors sm:hidden">포토 리뷰 전체보기</button>
+        </section>
+
+    </main>
+
+    <!-- 10. 복구된 푸터 + 미니멀 하단 바 -->
+    <footer class="bg-[#111111] text-[#F2EFE9] pt-16 pb-12 border-t-[6px] border-[#1A3626]">
+        <!-- 큰 푸터 영역 (고객센터, 쇼핑 등) 복구 -->
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+            <!-- 고객 지원 정보 -->
+            <div id="help">
+                <h3 class="text-[16px] font-semibold leading-[1.2] tracking-[0.01em] mb-5 uppercase text-[#D2AE37]">HELP / CS Center</h3>
+                <ul class="text-[14px] text-gray-400 space-y-3">
+                    <li><a href="#" class="hover:text-white transition-colors">자주 묻는 질문 (FAQ)</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors font-semibold text-gray-200">배송 / 교환 / 환불 정책 안내</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">실측 사이즈 가이드</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">멤버십 쿠폰 및 마일리지 안내</a></li>
+                    <li class="pt-2">
+                        <span class="block text-white font-semibold text-[16px] mb-1">1588-0000</span>
+                        <span class="text-[12px]">운영시간: 평일 10:00 - 17:00<br>(점심시간 12:00 - 13:00 / 주말 휴무)</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 쇼핑 카테고리 -->
+            <div>
+                <h3 class="text-[16px] font-semibold leading-[1.2] tracking-[0.01em] mb-5 uppercase text-[#D2AE37]">SHOP</h3>
+                <ul class="text-[14px] text-gray-400 space-y-3">
+                    <li><a href="#" class="hover:text-white transition-colors">UNIFORM (HOME / AWAY / THIRD)</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">BOTTOM (WHITE / BLACK)</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">WINDBREAKER</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">HOODIE</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">VARSITY JACKET</a></li>
+                </ul>
+            </div>
+            <!-- 브랜드 정보 -->
+            <div>
+                <h3 class="text-[16px] font-semibold leading-[1.2] tracking-[0.01em] mb-5 uppercase text-[#D2AE37]">ABOUT VERONE</h3>
+                <ul class="text-[14px] text-gray-400 space-y-3">
+                    <li><a href="#" class="hover:text-white transition-colors">브랜드 스토리텔링</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">디지털 뮤지엄 (Archive)</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">오프라인 스토어 안내</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">제휴 및 입점 문의</a></li>
+                </ul>
+            </div>
+            <!-- 브랜드 로고 및 슬로건 -->
+            <div>
+                <div class="font-inika text-[48px] font-bold leading-none tracking-normal mb-2 text-white">VERONE</div>
+                <p class="text-[12px] text-gray-400 mb-6 font-mono">Classic Never Dies. Since 1994</p>
+            </div>
+        </div>
+        
+        <!-- 하단 바: 카피라이트, 얇은 SNS 아이콘, 약관 (요청 디자인 반영) -->
+        <div class="max-w-7xl mx-auto px-8 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-[12px] text-gray-500 font-semibold tracking-wide">
+            <div class="mb-4 md:mb-0">
+                &copy; 2026 VERONE STUDIO. ALL RIGHTS RESERVED.
+            </div>
+            <div class="flex items-center space-x-8">
+                <!-- SNS 아이콘 (Phosphor Icons - Light weight) -->
+                <div class="flex space-x-5 text-[18px]">
+                    <a href="#" class="hover:text-white transition-colors"><i class="ph-light ph-instagram-logo"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="ph-light ph-twitter-logo"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="ph-light ph-youtube-logo"></i></a>
+                </div>
+                <!-- 약관 링크 -->
+                <div class="flex space-x-5">
+                    <a href="#" class="hover:text-white transition-colors">이용약관</a>
+                    <a href="#" class="hover:text-white transition-colors">개인정보처리방침</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
